@@ -140,7 +140,7 @@ public class RecorderActivity extends AppCompatActivity implements AdapterView.O
      * 展示时间选择器
      */
     public void showDatePickerDialog(View view) {
-        DialogFragment newFragment = new DatePickerFragment(time, time_view);
+        DialogFragment newFragment = new DatePickerFragment(time_view);
         newFragment.show(getFragmentManager(), "datePicker");
     }
 
@@ -157,14 +157,14 @@ public class RecorderActivity extends AppCompatActivity implements AdapterView.O
     /**
      * 时间选取器
      */
-    public static class DatePickerFragment extends DialogFragment
+    public class DatePickerFragment extends DialogFragment
             implements DatePickerDialog.OnDateSetListener {
 
-        private String time;
+        //private String time;
         private TextView time_view;
 
-        public DatePickerFragment(String time, TextView time_view) {
-            this.time = time;
+        public DatePickerFragment(TextView time_view) {
+            //this.time = time;
             this.time_view = time_view;
         }
 
@@ -182,7 +182,7 @@ public class RecorderActivity extends AppCompatActivity implements AdapterView.O
 
         @Override
         public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-            this.time = year + "/" + (monthOfYear + 1) + "/" + dayOfMonth;
+            time = year + "/" + (monthOfYear + 1) + "/" + dayOfMonth;
             time_view.setText("Time: " + time);
         }
     }
