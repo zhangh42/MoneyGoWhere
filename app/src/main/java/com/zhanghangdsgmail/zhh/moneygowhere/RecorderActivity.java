@@ -39,7 +39,7 @@ public class RecorderActivity extends AppCompatActivity implements AdapterView.O
     public final static String MONEY = "金额";
 
     private static final String TAG = "RecorderActivity";
-    
+
     private String time;
     private String note;
     private String pay_way = "现金";
