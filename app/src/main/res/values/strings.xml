@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MoneyGoWhere</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_use_array">
+        <item>现金</item>
+        <item>校园卡</item>
+        <item>微信支付</item>
+        <item>支付宝</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="spinner_array">
+        <item>零食</item>
+        <item>衣服</item>
+        <item>网费</item>
+        <item>饮料</item>
+        <item>水果</item>
+        <item>外卖</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

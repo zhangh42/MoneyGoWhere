@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhanghangdsgmail.zhh.moneygowhere.RecorderActivity">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:text="清单详情"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recorder_time_view"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="25dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选取时间"
+            android:onClick="showDatePickerDialog" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="支付方式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/recorder_use_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="支付金额"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/recorder_money"
+            android:hint="输入金额"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:text="用途"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <CheckBox
+           android:id="@+id/recorder_use_fruit"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="水果"
+           android:onClick="onCheckboxClicked"/>
+
+       <CheckBox
+           android:id="@+id/recorder_use_snacks"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="零食"
+           android:onClick="onCheckboxClicked"/>
+
+       <CheckBox
+           android:id="@+id/recorder_use_drink"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="饮料"
+           android:onClick="onCheckboxClicked"/>
+
+       <CheckBox
+       android:id="@+id/recorder_use_net_cost"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="网费"
+       android:onClick="onCheckboxClicked"/>
+
+       <CheckBox
+           android:id="@+id/recorder_use_clothes"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="衣服"
+           android:onClick="onCheckboxClicked"/>
+
+       <CheckBox
+           android:id="@+id/recorder_use_takeout__food"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="外卖"
+           android:onClick="onCheckboxClicked"/>
+
+   </LinearLayout>
+
+    <EditText
+        android:hint="备注"
+        android:id="@+id/recorder_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
